@@ -16,7 +16,7 @@ function calculate(event){
 
     if(ageInput<18){
        let prezzoBigliettoMinorenni = prezzoBiglietto - (prezzoBiglietto * scontoMinorenni)/100;
-       p.innerHTML = "Kilometers: " + kmInput + " Age: " + ageInput + " Discount: " + scontoOver65 + "%" + " Price: " +  prezzoBigliettoMinorenni + "€";
+       p.innerHTML = "Kilometers: " + kmInput + " Age: " + ageInput + " Discount: " + scontoMinorenni + "%" + " Price: " +  prezzoBigliettoMinorenni + "€";
     } else if (ageInput>65){
         let prezzoBigliettoOver65 = prezzoBiglietto - (prezzoBiglietto * scontoOver65)/100;
         p.innerHTML = "Kilometers: " + kmInput + " Age: " + ageInput + " Discount: " + scontoOver65 + "%" + " Price: " +  prezzoBigliettoOver65 + "€";
